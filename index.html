@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant's table booking form</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=2BeIdZyy0fFG&format=png" type="image/x-icon">
+    <script>
+        function myalert() {
+            alert("Welcome to our MAYFAIR\n " +
+                "We will contact you" +
+                        "Shortly");
+        }
+    </script>
+
+   <style>
+
+
+body{
+    
+    text-align: center;
+    text-align: center;
+     background-color: #32ff7e;
+   margin-left: 20%;
+   
+   
+}
+#maindiv{
+    
+    
+}
+#form{
+   
+    color:black;
+  
+}
+.borders{
+    border:royalblue;
+    border-radius: 10px;
+    padding: 5px;
+    height: 20px;
+    
+    width: 200px;
+    
+}
+.text {
+    width: 200px;
+    justify-content: center;
+}
+/* css flex part */
+.section{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-inline: 10px;
+}
+
+.radios{
+    display: flex;
+    flex-direction:row ;
+    gap: 20px;
+    padding-inline: 10px;
+    align-items: center;
+    width: 60px;
+}
+
+.subdiv{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    
+}
+.section{
+    padding-block: 10px;
+    font-weight: 300;
+    
+}
+
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  min-width: 250px;
+  margin-left: -50px;
+}
+
+.button:hover {background-color: #ff4d4d}
+
+.button:active {
+  background-color: #ff4d4d;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+    </style>
+</head>
+<body>
+<div id="maindiv">
+    <h1 style="margin-left: -20%;">Restaurant Reservation Form</h1>
+    <!-- main div -->
+    <form action="" method="">
+        <div id="herodiv">
+            <div class="subdiv">
+                <!-- 1 -->
+                <div class="section">
+                    <p class="text"><b>First Name</b></p>
+                    <input type="text" placeholder="First Name" class="borders" >
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 2 -->
+                <div class="section">
+                    <p class="text"><b>Last Name</b></p>
+                    <input type="text" placeholder="Last Name" class="borders">
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 3 -->
+                <div class="section">
+                    <label for=""class="text" ><b>Email</b></label>
+                    <input type="email" name="" id="" class="borders" placeholder="xyz@gmail.com" style="">
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 4 -->
+                <div class="section">
+                    <label for=""class="text"><b>Phone Number</b></label>        
+                     <input type="tel" name="" id="" class="borders" placeholder="+91-" requiredstyle="margin-left: -5px;"> 
+            </div>
+            </div>
+            <div class="subdiv">
+                <!-- 5 -->
+                <div class="section">
+                    <label for=""class="text"><b>Reservation Date</b></label>
+                    <input type="date" name="" id="" class="borders"style="width: 200px;">
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 6 -->
+                <div class="section">
+                    <label for=""class="text"><b>Reservation Time</b></label>
+                    <input type="time" name="" id="" class="borders" style="width: 200px;">
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 7 -->
+                <div class="section">
+                    <div>
+                        <label for=""class="text" style="margin-left: 40px;"><b>Number's of Guest?</b></label>
+                        <input type="number" name="" id="" class="borders" style="margin-left: 40px; ">
+                    </div>
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 8 -->
+                <div class="section">
+                    <div id="textres"class="text"style="margin-left: -4px;" ><b>Reservation type</b></div>
+                     <div class="radios">
+                        <input type="radio" name="R_type" id="lunch">
+                        <label for="lunch">Lunch</label>
+                     </div>
+                     <div class="radios">
+                        <input type="radio" name="R_type" id="dinner">
+                        <label for="dinner">Dinner</label>
+                     </div>
+                     <div class="radios">
+                        <input type="radio" name="R_type" id="Private">
+                        <label for="Private">Private</label>
+                     </div>
+                     <div class="radios">
+                         <input type="radio" name="R_type" id="Wedding">
+                         <label for="Wedding">Wedding</label>
+                     </div>
+                     <div class="radios">
+                        <input type="radio" name="R_type" id="Holiday">
+                        <label for="Holiday">Corporate</label>
+                     </div>
+                </div>
+            </div>
+            <div class="subdiv">
+                <!-- 9 -->
+                <div class="section">
+                    <p class="text"style="margin-left: -10px;"><b>If any  request's</b></p>
+                    <textarea name="" id="txta" cols="30" rows="5" class="borders"style="margin-left: 10px;"></textarea>
+                </div>
+            </div>
+            <input type="submit"class="button" value="Submit" onclick="myalert()">
+            
+    </form>
+        
+    </div>
+   
+
+
+
+
+    
+         
+</div>   
+</body>
+</html>
